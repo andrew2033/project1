@@ -4,12 +4,14 @@ const clean = require('gulp-clean');
 const concat = require('gulp-concat');
 const runSequence = require('run-sequence');
 const browserSync = require('browser-sync').create();
+const sass = require("gulp-sass");
 
 const distDirectory = 'dist';
 const htmlBlob = 'src/*.html';
 const imagesBlob = 'src/images/**';
 const fontsBlob = 'src/fonts/**';
 const stylesBlob = 'src/css/**';
+const sassBlob = 'src/sass/**'
 
 gulp.task('default', function () {
   return runSequence('build', 'serve');
@@ -77,4 +79,10 @@ gulp.task('processStyles', function () {
 gulp.task('reloadBrowser', function (done) {
   browserSync.reload();
   done();
+});
+
+gulp.task('sass', function() {
+ return  gulp.src(sassBlob)
+   .pipe(sass())
+   .pipe(gulp.dest(`${distDirectory}/css/`));
 });

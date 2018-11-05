@@ -18,5 +18,8 @@
     "gulp-concat": "^2.6.1",
     "gulp-server-livereload": "^1.9.2",
     "run-sequence": "^2.2.1"
+  },
+  "dependencies": {
+    "gulp-sass": "^4.0.2"
   }
 }
