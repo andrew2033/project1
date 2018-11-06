@@ -46,7 +46,12 @@ gulp.task('serve', function () {
   gulp.watch(stylesBlob, function () {
     return runSequence('processStyles', 'reloadBrowser');
   });
+   gulp.watch(sassBlob, function () {
+    return runSequence('sass', 'reloadBrowser');
+  });
+
 });
+ 
 
 gulp.task('cleanDist', function () {
   return gulp.src(distDirectory, {read: false, allowEmpty: true}).pipe(clean());
