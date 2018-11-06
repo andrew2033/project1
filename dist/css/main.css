@@ -43,7 +43,7 @@
   float: right;
   margin-top: 15px; }
 
-.top-link {
+.top-menu__link {
   color: #263742;
   text-decoration: none;
   font-size: 14px;
@@ -142,7 +142,7 @@
   width: 423px;
   margin-top: 40px; }
 
-.portfolio-title {
+.portfolio__title {
   color: #314a5b;
   font-family: Montserrat;
   font-size: 40px;
@@ -150,7 +150,7 @@
   text-transform: uppercase;
   color: #465065; }
 
-.portfolio-sub-text {
+.portfolio__sub-text {
   margin-top: 10px;
   color: #314a5b;
   font-family: "Open Sans";
@@ -158,20 +158,20 @@
   font-weight: 400;
   line-height: 20px; }
 
-.portfolio-p {
+.portfolio__p {
   color: #9aa0ab;
   font-family: "Open Sans";
   font-size: 16px;
   font-weight: 400;
   margin-top: 50px; }
 
-.our-team-title {
+.our-team__title {
   font-family: "Montserrat",sans-serif;
   font-size: 32px;
   color: #314a5b;
   margin-bottom: 50px; }
 
-.our-team-p {
+.our-team__p {
   font-size: 0;
   font-size: 16px; }
 
@@ -219,11 +219,11 @@
   margin: 50px 0 50px 0;
   float: left; }
 
-.list-icons {
+.list__icons {
   display: inline-block;
   margin-right: 15px; }
 
-.link-icosns {
+.link__icons {
   display: block;
   padding: 5px; }
 
